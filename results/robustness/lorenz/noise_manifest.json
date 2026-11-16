@@ -1,0 +1,235 @@
+{
+  "experiment": 20,
+  "system": "lorenz",
+  "seeds": [
+    101,
+    202,
+    303,
+    404,
+    505
+  ],
+  "noise_levels": [
+    {
+      "label": "noise_000",
+      "std": 0.0
+    },
+    {
+      "label": "noise_001",
+      "std": 0.01
+    },
+    {
+      "label": "noise_005",
+      "std": 0.05
+    },
+    {
+      "label": "noise_010",
+      "std": 0.1
+    },
+    {
+      "label": "noise_020",
+      "std": 0.2
+    }
+  ],
+  "conditions": [
+    {
+      "seed": 101,
+      "noise_label": "noise_000",
+      "noise_std": 0.0,
+      "train_count": 16,
+      "val_count": 3,
+      "test_count": 5
+    },
+    {
+      "seed": 202,
+      "noise_label": "noise_000",
+      "noise_std": 0.0,
+      "train_count": 16,
+      "val_count": 3,
+      "test_count": 5
+    },
+    {
+      "seed": 303,
+      "noise_label": "noise_000",
+      "noise_std": 0.0,
+      "train_count": 16,
+      "val_count": 3,
+      "test_count": 5
+    },
+    {
+      "seed": 404,
+      "noise_label": "noise_000",
+      "noise_std": 0.0,
+      "train_count": 16,
+      "val_count": 3,
+      "test_count": 5
+    },
+    {
+      "seed": 505,
+      "noise_label": "noise_000",
+      "noise_std": 0.0,
+      "train_count": 16,
+      "val_count": 3,
+      "test_count": 5
+    },
+    {
+      "seed": 101,
+      "noise_label": "noise_001",
+      "noise_std": 0.01,
+      "train_count": 16,
+      "val_count": 3,
+      "test_count": 5
+    },
+    {
+      "seed": 202,
+      "noise_label": "noise_001",
+      "noise_std": 0.01,
+      "train_count": 16,
+      "val_count": 3,
+      "test_count": 5
+    },
+    {
+      "seed": 303,
+      "noise_label": "noise_001",
+      "noise_std": 0.01,
+      "train_count": 16,
+      "val_count": 3,
+      "test_count": 5
+    },
+    {
+      "seed": 404,
+      "noise_label": "noise_001",
+      "noise_std": 0.01,
+      "train_count": 16,
+      "val_count": 3,
+      "test_count": 5
+    },
+    {
+      "seed": 505,
+      "noise_label": "noise_001",
+      "noise_std": 0.01,
+      "train_count": 16,
+      "val_count": 3,
+      "test_count": 5
+    },
+    {
+      "seed": 101,
+      "noise_label": "noise_005",
+      "noise_std": 0.05,
+      "train_count": 16,
+      "val_count": 3,
+      "test_count": 5
+    },
+    {
+      "seed": 202,
+      "noise_label": "noise_005",
+      "noise_std": 0.05,
+      "train_count": 16,
+      "val_count": 3,
+      "test_count": 5
+    },
+    {
+      "seed": 303,
+      "noise_label": "noise_005",
+      "noise_std": 0.05,
+      "train_count": 16,
+      "val_count": 3,
+      "test_count": 5
+    },
+    {
+      "seed": 404,
+      "noise_label": "noise_005",
+      "noise_std": 0.05,
+      "train_count": 16,
+      "val_count": 3,
+      "test_count": 5
+    },
+    {
+      "seed": 505,
+      "noise_label": "noise_005",
+      "noise_std": 0.05,
+      "train_count": 16,
+      "val_count": 3,
+      "test_count": 5
+    },
+    {
+      "seed": 101,
+      "noise_label": "noise_010",
+      "noise_std": 0.1,
+      "train_count": 16,
+      "val_count": 3,
+      "test_count": 5
+    },
+    {
+      "seed": 202,
+      "noise_label": "noise_010",
+      "noise_std": 0.1,
+      "train_count": 16,
+      "val_count": 3,
+      "test_count": 5
+    },
+    {
+      "seed": 303,
+      "noise_label": "noise_010",
+      "noise_std": 0.1,
+      "train_count": 16,
+      "val_count": 3,
+      "test_count": 5
+    },
+    {
+      "seed": 404,
+      "noise_label": "noise_010",
+      "noise_std": 0.1,
+      "train_count": 16,
+      "val_count": 3,
+      "test_count": 5
+    },
+    {
+      "seed": 505,
+      "noise_label": "noise_010",
+      "noise_std": 0.1,
+      "train_count": 16,
+      "val_count": 3,
+      "test_count": 5
+    },
+    {
+      "seed": 101,
+      "noise_label": "noise_020",
+      "noise_std": 0.2,
+      "train_count": 16,
+      "val_count": 3,
+      "test_count": 5
+    },
+    {
+      "seed": 202,
+      "noise_label": "noise_020",
+      "noise_std": 0.2,
+      "train_count": 16,
+      "val_count": 3,
+      "test_count": 5
+    },
+    {
+      "seed": 303,
+      "noise_label": "noise_020",
+      "noise_std": 0.2,
+      "train_count": 16,
+      "val_count": 3,
+      "test_count": 5
+    },
+    {
+      "seed": 404,
+      "noise_label": "noise_020",
+      "noise_std": 0.2,
+      "train_count": 16,
+      "val_count": 3,
+      "test_count": 5
+    },
+    {
+      "seed": 505,
+      "noise_label": "noise_020",
+      "noise_std": 0.2,
+      "train_count": 16,
+      "val_count": 3,
+      "test_count": 5
+    }
+  ]
+}

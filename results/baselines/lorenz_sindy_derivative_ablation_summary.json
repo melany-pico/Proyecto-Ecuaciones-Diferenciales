@@ -1,0 +1,90 @@
+{
+  "system": "lorenz",
+  "seed": 42,
+  "dt": 0.050314465408805034,
+  "complexity_penalty": 0.005,
+  "best_realistic": {
+    "estimator": "savgol_w5",
+    "oracle": false,
+    "degree": 2,
+    "threshold": 0.2,
+    "n_terms": 6,
+    "val_relative_l2": 0.04842936432510045,
+    "score": 0.07842936432510045
+  },
+  "winners": [
+    {
+      "estimator": "gradient",
+      "oracle": false,
+      "degree": 2,
+      "threshold": 0.5,
+      "n_terms": 6,
+      "val_relative_l2": 0.07741423724581296,
+      "score": 0.10741423724581296
+    },
+    {
+      "estimator": "savgol_w5",
+      "oracle": false,
+      "degree": 2,
+      "threshold": 0.2,
+      "n_terms": 6,
+      "val_relative_l2": 0.04842936432510045,
+      "score": 0.07842936432510045
+    },
+    {
+      "estimator": "savgol_w7",
+      "oracle": false,
+      "degree": 3,
+      "threshold": 0.5,
+      "n_terms": 10,
+      "val_relative_l2": 0.114073915918416,
+      "score": 0.164073915918416
+    },
+    {
+      "estimator": "savgol_w9",
+      "oracle": false,
+      "degree": 3,
+      "threshold": 0.3,
+      "n_terms": 8,
+      "val_relative_l2": 0.2068276144052778,
+      "score": 0.2468276144052778
+    },
+    {
+      "estimator": "savgol_w11",
+      "oracle": false,
+      "degree": 3,
+      "threshold": 0.2,
+      "n_terms": 20,
+      "val_relative_l2": 0.19815897719507142,
+      "score": 0.29815897719507145
+    },
+    {
+      "estimator": "savgol_w15",
+      "oracle": false,
+      "degree": 3,
+      "threshold": 0.2,
+      "n_terms": 20,
+      "val_relative_l2": 0.3700341798040163,
+      "score": 0.4700341798040163
+    },
+    {
+      "estimator": "savgol_w21",
+      "oracle": false,
+      "degree": 3,
+      "threshold": 0.2,
+      "n_terms": 21,
+      "val_relative_l2": 0.5481009875029319,
+      "score": 0.6531009875029319
+    },
+    {
+      "estimator": "oracle_true_field",
+      "oracle": true,
+      "degree": 2,
+      "threshold": 0.01,
+      "n_terms": 7,
+      "val_relative_l2": 3.781346058994431e-15,
+      "score": 0.035000000000003785
+    }
+  ],
+  "note": "Validation only. Oracle uses ground-truth derivatives."
+}

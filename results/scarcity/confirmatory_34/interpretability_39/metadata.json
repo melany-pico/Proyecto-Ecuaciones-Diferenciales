@@ -1,0 +1,16 @@
+{
+  "experiment": 39,
+  "scope": "confirmatory 15 seeds only",
+  "sources": [
+    "C:\\Users\\hp\\Desktop\\neural_ode_symbolic_distillation\\results\\scarcity\\confirmatory_34\\evaluation\\vanderpol\\test_metrics_all.csv",
+    "C:\\Users\\hp\\Desktop\\neural_ode_symbolic_distillation\\results\\scarcity\\confirmatory_34\\evaluation\\duffing\\test_metrics_all.csv",
+    "C:\\Users\\hp\\Desktop\\neural_ode_symbolic_distillation\\results\\scarcity\\confirmatory_34\\evaluation\\lotka_volterra\\test_metrics_all.csv"
+  ],
+  "n_models": 540,
+  "n_paired_seed_comparisons": 180,
+  "analysis": "descriptive only; no new hypothesis testing or model selection",
+  "f1": "Not applicable for neural_ode; NaN values are excluded and counted, never replaced with zero",
+  "nonfinite": "Nonfinite values excluded from finite descriptive statistics and counted explicitly",
+  "nonzero_terms": "A lower count alone does not establish a better equation",
+  "note": "Structural F1 does not assess coefficient accuracy; field_rel_l2 is a complementary fidelity measure."
+}

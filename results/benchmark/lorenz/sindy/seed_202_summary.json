@@ -1,0 +1,17 @@
+{
+  "seed": 202,
+  "estimator": "savgol_w5",
+  "degree": 3,
+  "threshold": 0.2,
+  "n_terms": 6,
+  "trajectory_relative_l2": 0.03831335952549072,
+  "failed_segments": 0,
+  "score": 0.06831335952549072,
+  "equations": [
+    "dx0/dt = (-9.918463)*x0 (+9.921015)*x1",
+    "dx1/dt = (+25.126230)*x0 (-0.936479)*x0 x2",
+    "dx2/dt = (-2.633563)*x2 (+0.988224)*x0 x1"
+  ],
+  "test_used": false,
+  "selection": "Validation trajectory relative L2 + 0.005 per nonzero term"
+}

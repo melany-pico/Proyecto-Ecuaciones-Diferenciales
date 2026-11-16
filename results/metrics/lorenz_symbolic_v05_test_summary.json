@@ -1,0 +1,52 @@
+{
+  "system": "lorenz",
+  "split": "test",
+  "n_trajectories": 5,
+  "n_test_states": 800,
+  "states_source": "clean",
+  "degree": 2,
+  "threshold": 0.3,
+  "field_metrics": [
+    {
+      "comparison": "neural_vs_true",
+      "mse": 114.37333036369988,
+      "rmse": 10.694546758217474,
+      "relative_l2": 0.17054956206288366
+    },
+    {
+      "comparison": "symbolic_vs_true",
+      "mse": 47.52694874353521,
+      "rmse": 6.893979166166315,
+      "relative_l2": 0.10994062247255824
+    },
+    {
+      "comparison": "symbolic_vs_neural",
+      "mse": 57.461530276283426,
+      "rmse": 7.580338401172036,
+      "relative_l2": 0.13478731495629584
+    }
+  ],
+  "support_metrics": {
+    "selected_terms": 6,
+    "true_terms": 7,
+    "true_positives": 6,
+    "false_positives": 0,
+    "false_negatives": 1,
+    "precision": 1.0,
+    "recall": 0.8571428571428571,
+    "f1": 0.923076923076923,
+    "coefficient_relative_l2": 0.17368002010507183
+  },
+  "trajectory_horizon": 0.9559748427672956,
+  "trajectory_summary": {
+    "neural": {
+      "rmse": 10.450441429292285,
+      "relative_l2": 1.000615385628445
+    },
+    "symbolic": {
+      "rmse": 8.222943964350053,
+      "relative_l2": 0.7916152214863272
+    }
+  },
+  "note": "Short-horizon trajectory scores use held-out reference states and their initial conditions."
+}

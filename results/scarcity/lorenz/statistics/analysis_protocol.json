@@ -1,0 +1,34 @@
+{
+  "experiment": 28,
+  "source": "C:\\Users\\hp\\Desktop\\neural_ode_symbolic_distillation\\results\\scarcity\\lorenz\\evaluation\\test_metrics_all.csv",
+  "n_models": 60,
+  "seeds": [
+    101,
+    202,
+    303,
+    404,
+    505
+  ],
+  "levels": [
+    "obs_100",
+    "obs_050",
+    "obs_025",
+    "obs_010"
+  ],
+  "methods": [
+    "neural_ode",
+    "neural_distillation",
+    "direct_sindy"
+  ],
+  "statistical_unit": "seed",
+  "bootstrap_iterations": 20000,
+  "bootstrap_rng_seed": 28042,
+  "bootstrap_ci": "percentile 95% paired resampling of seeds",
+  "hypothesis_test": "exact two-sided paired sign-flip test of mean differences",
+  "multiplicity": "Holm adjustment across four scarcity levels, separately for each metric and method comparison",
+  "inference_caution": "Five seeds: exploratory intervals and low-power tests; no causal or broad-population claims",
+  "test_usage": "post-hoc reporting only; no training, selection, or tuning",
+  "total_failed_windows": 0,
+  "total_evaluated_windows": 2400,
+  "failure_policy": "Failed windows excluded by Experiment 27; report failure counts and do not compare valid-only errors if failures differ"
+}

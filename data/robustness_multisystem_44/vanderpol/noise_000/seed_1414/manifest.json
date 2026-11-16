@@ -1,0 +1,54 @@
+{
+  "experiment": 44,
+  "system": "vanderpol",
+  "seed": 1414,
+  "noise_label": "noise_000",
+  "noise_std": 0.0,
+  "protocol_sha256": "7c059ce3948b73039a68306e7d55fbe03428dad8535d91dfe2b9791c9aa8c3a6",
+  "source_sha256": {
+    "train": "1b91fb74f395d9498fc1af6e2cc6560517bf10b27a78be678c0bec01d32b9c99",
+    "val": "edc92ab2d183aaab1795e87466476b1a53db1e28446ec8aeb50678964c977cb9",
+    "test": "d3ddd1a6b42f52693921d01751de9897fcdebecfd4e868cbe9f730d3216a8997"
+  },
+  "output_sha256": {
+    "train": "283b5e7a4459e7f01e8d2c30464de5135110a269454b5927426dab3230297af8",
+    "val": "2ae30cf0d0ea46f832327542586addffeda1e518ba7c3d3de86447e32059e3ca",
+    "test": "260571a89e48a1088746ba2e619cefb04a287bf05ac1df66577979414e26a2ee"
+  },
+  "rng": "numpy.default_rng(SeedSequence(SHA256-derived uint32 words))",
+  "rng_token_format": "exp44|gaussian|system|seed|noise_label|split",
+  "noise_generated_from": "x_clean",
+  "test_policy": "Generated and sealed; never use test for training or model selection",
+  "trajectory_ids": {
+    "train": [
+      2,
+      3,
+      4,
+      6,
+      7,
+      10,
+      11,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      20,
+      22,
+      23
+    ],
+    "val": [
+      5,
+      12,
+      21
+    ],
+    "test": [
+      0,
+      1,
+      8,
+      9,
+      19
+    ]
+  }
+}

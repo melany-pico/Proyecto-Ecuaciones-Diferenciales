@@ -1,0 +1,31 @@
+seed: 42
+system: lorenz
+simulation:
+  trajectories: 24
+  points: 160
+  t_end: 8.0
+  noise_std: 0.01
+training:
+  epochs: 300
+  lr: 0.001
+  hidden: 64
+  batch_trajectories: 8
+  segment_length: 8
+  batches_per_epoch: 8
+  device: cpu
+  normalization:
+    enabled: true
+    epsilon: 1.0e-6
+  loss:
+    trajectory_weight: 1.0
+    derivative_weight: 0.1
+  scheduler:
+    factor: 0.5
+    patience: 20
+  early_stopping:
+    patience: 60
+discovery:
+  polynomial_degree: 3
+  threshold: 0.08
+  ridge: 0.00001
+  sample_points: 3000

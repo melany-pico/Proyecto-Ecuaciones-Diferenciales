@@ -1,0 +1,98 @@
+REVISION DE RESULTADOS CIENTIFICOS
+================================================================================
+
+
+tabla_1_escasez.csv
+--------------------------------------------------------------------------------
+Filas: 12
+Columnas: 8
+
+        system   level  n_seeds  mean_nd  mean_sindy  mean_delta  nd_failures  sindy_failures
+       duffing obs_010       15 0.161088    0.077634    0.083454            0               0
+       duffing obs_025       15 0.197827    0.006735    0.191091            0               0
+       duffing obs_050       15 0.186400    0.002855    0.183545            0               0
+       duffing obs_100       15 0.181877    0.002214    0.179663            0               0
+lotka_volterra obs_010       15 0.021878    0.133516   -0.111639            0               0
+lotka_volterra obs_025       15 0.018243    0.042308   -0.024065            0               0
+lotka_volterra obs_050       15 0.015943    0.008523    0.007420            0               0
+lotka_volterra obs_100       15 0.013971    0.002312    0.011659            0               0
+     vanderpol obs_010       15 0.020852    0.092333   -0.071480            0               0
+     vanderpol obs_025       15 0.015243    0.019939   -0.004695            0               0
+     vanderpol obs_050       15 0.015024    0.005167    0.009856            0               0
+     vanderpol obs_100       15 0.012948    0.001362    0.011586            0               0
+
+
+tabla_2_ruido_tres_metodos.csv
+--------------------------------------------------------------------------------
+Filas: 45
+Columnas: 7
+
+        system     level  noise_std              method  n_seeds     mean       sd
+     vanderpol noise_000       0.00          neural_ode       15 0.029571 0.008436
+     vanderpol noise_000       0.00 neural_distillation       15 0.013006 0.004086
+     vanderpol noise_000       0.00        direct_sindy       15 0.001201 0.000094
+     vanderpol noise_001       0.01          neural_ode       15 0.031115 0.009551
+     vanderpol noise_001       0.01 neural_distillation       15 0.014150 0.002975
+     vanderpol noise_001       0.01        direct_sindy       15 0.001453 0.000283
+     vanderpol noise_005       0.05          neural_ode       15 0.037860 0.012021
+     vanderpol noise_005       0.05 neural_distillation       15 0.018640 0.003986
+     vanderpol noise_005       0.05        direct_sindy       15 0.005947 0.002626
+     vanderpol noise_010       0.10          neural_ode       15 0.048292 0.017214
+     vanderpol noise_010       0.10 neural_distillation       15 0.025840 0.005402
+     vanderpol noise_010       0.10        direct_sindy       15 0.011304 0.002360
+     vanderpol noise_020       0.20          neural_ode       15 0.071051 0.028242
+     vanderpol noise_020       0.20 neural_distillation       15 0.053588 0.008958
+     vanderpol noise_020       0.20        direct_sindy       15 0.040903 0.008062
+       duffing noise_000       0.00          neural_ode       15 0.189699 0.119257
+       duffing noise_000       0.00 neural_distillation       15 0.180955 0.108803
+       duffing noise_000       0.00        direct_sindy       15 0.000640 0.000131
+       duffing noise_001       0.01          neural_ode       15 0.207652 0.111831
+       duffing noise_001       0.01 neural_distillation       15 0.195371 0.107129
+       duffing noise_001       0.01        direct_sindy       15 0.001738 0.001058
+       duffing noise_005       0.05          neural_ode       15 0.220753 0.101934
+       duffing noise_005       0.05 neural_distillation       15 0.212111 0.091274
+       duffing noise_005       0.05        direct_sindy       15 0.011945 0.006599
+       duffing noise_010       0.10          neural_ode       15 0.206819 0.099276
+       duffing noise_010       0.10 neural_distillation       15 0.197594 0.087131
+       duffing noise_010       0.10        direct_sindy       15 0.036863 0.017213
+       duffing noise_020       0.20          neural_ode       15 0.245598 0.087183
+       duffing noise_020       0.20 neural_distillation       15 0.239120 0.056656
+       duffing noise_020       0.20        direct_sindy       15 0.108886 0.031998
+lotka_volterra noise_000       0.00          neural_ode       15 0.020518 0.008475
+lotka_volterra noise_000       0.00 neural_distillation       15 0.012664 0.012506
+lotka_volterra noise_000       0.00        direct_sindy       15 0.002250 0.000476
+lotka_volterra noise_001       0.01          neural_ode       15 0.023025 0.010441
+lotka_volterra noise_001       0.01 neural_distillation       15 0.014545 0.014593
+lotka_volterra noise_001       0.01        direct_sindy       15 0.002286 0.000507
+lotka_volterra noise_005       0.05          neural_ode       15 0.024839 0.011047
+lotka_volterra noise_005       0.05 neural_distillation       15 0.021028 0.026036
+lotka_volterra noise_005       0.05        direct_sindy       15 0.003828 0.001147
+lotka_volterra noise_010       0.10          neural_ode       15 0.032466 0.008303
+lotka_volterra noise_010       0.10 neural_distillation       15 0.022851 0.018597
+lotka_volterra noise_010       0.10        direct_sindy       15 0.007972 0.002945
+lotka_volterra noise_020       0.20          neural_ode       15 0.043862 0.014141
+lotka_volterra noise_020       0.20 neural_distillation       15 0.042003 0.024903
+lotka_volterra noise_020       0.20        direct_sindy       15 0.022221 0.007736
+
+
+tabla_3_primarias_experimento_34.csv
+--------------------------------------------------------------------------------
+Filas: 3
+Columnas: 11
+
+        system   level  n_seeds  mean_delta_nd_minus_sindy  ci95_bootstrap_low  ci95_bootstrap_high  nd_wins  sindy_wins  ties  p_exact_one_sided  p_holm_three_primary
+     vanderpol obs_010       15                  -0.071480           -0.077381            -0.064744       15           0     0           0.000031              0.000092
+       duffing obs_010       15                   0.083454            0.026176             0.139229        6           9     0           0.992889              0.992889
+lotka_volterra obs_010       15                  -0.111639           -0.128081            -0.095439       15           0     0           0.000031              0.000092
+
+
+tabla_4_primarias_experimento_44.csv
+--------------------------------------------------------------------------------
+Filas: 3
+Columnas: 18
+
+        system     level start_policy      metric            method_a     method_b  n_seeds   mean_a   mean_b  mean_difference  median_difference  ci_95_low  ci_95_high  wins_a  wins_b  ties  p_exact_two_sided  p_holm_primary
+     vanderpol noise_020  clean_start traj_rel_l2 neural_distillation direct_sindy       15 0.053588 0.040903         0.012685           0.012234   0.009638    0.015875       0      15     0           0.000061        0.000183
+       duffing noise_020  clean_start traj_rel_l2 neural_distillation direct_sindy       15 0.239120 0.108886         0.130234           0.144273   0.094827    0.164115       1      14     0           0.000122        0.000244
+lotka_volterra noise_020  clean_start traj_rel_l2 neural_distillation direct_sindy       15 0.042003 0.022221         0.019782           0.008276   0.008875    0.032045       1      14     0           0.001770        0.001770
+

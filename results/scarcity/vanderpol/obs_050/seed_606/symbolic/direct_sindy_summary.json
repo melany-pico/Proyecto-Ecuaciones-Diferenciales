@@ -1,0 +1,10 @@
+{
+  "method": "direct_sindy",
+  "estimator": "gradient",
+  "degree": 3,
+  "threshold": 0.03,
+  "terms": 4,
+  "val_traj_l2": 0.015794600173787924,
+  "score": 0.035794600173787924,
+  "candidate_count": 98
+}

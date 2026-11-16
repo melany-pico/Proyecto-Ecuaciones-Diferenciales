@@ -1,0 +1,21 @@
+system,level,metric,method_a,method_b,n_paired,n_finite_pairs,n_nonfinite_pairs,wins_a,wins_b,ties,mean_a,mean_b,mean_difference_finite,difference_ci_low,difference_ci_high,p_exact_finite,p_holm,analysis_note
+vanderpol,obs_100,traj_rel_l2,neural_distillation,direct_sindy,5,5,0,0,5,0,0.012519851347915783,0.0011247284440109664,0.011395122903904816,0.008022160377213195,0.014768085430596442,0.0625,0.25,complete paired analysis
+vanderpol,obs_100,field_rel_l2,neural_distillation,direct_sindy,5,5,0,0,5,0,0.037735532022241024,0.0030981127809218195,0.0346374192413192,0.024867667324148367,0.04440717115849004,0.0625,0.25,complete paired analysis
+vanderpol,obs_100,structural_f1,neural_distillation,direct_sindy,5,5,0,0,0,5,1.0,1.0,0.0,0.0,0.0,1.0,1.0,complete paired analysis
+vanderpol,obs_100,traj_rel_l2,neural_distillation,neural_ode,5,5,0,5,0,0,0.012519851347915783,0.03440966049458768,-0.0218898091466719,-0.030893926205328014,-0.012969873794753936,0.0625,0.25,complete paired analysis
+vanderpol,obs_100,field_rel_l2,neural_distillation,neural_ode,5,5,0,5,0,0,0.037735532022241024,0.09992849246987055,-0.06219296044762953,-0.07992569071208395,-0.04176754451679,0.0625,0.25,complete paired analysis
+vanderpol,obs_050,traj_rel_l2,neural_distillation,direct_sindy,5,5,0,0,5,0,0.013500774065362065,0.004986571176657453,0.00851420288870461,0.006166569766773574,0.01108124273478707,0.0625,0.25,complete paired analysis
+vanderpol,obs_050,field_rel_l2,neural_distillation,direct_sindy,5,5,0,0,5,0,0.04269697052448727,0.01450035240383021,0.028196618120657053,0.02032887771300506,0.035258872392744375,0.0625,0.25,complete paired analysis
+vanderpol,obs_050,structural_f1,neural_distillation,direct_sindy,5,5,0,0,0,5,1.0,1.0,0.0,0.0,0.0,1.0,1.0,complete paired analysis
+vanderpol,obs_050,traj_rel_l2,neural_distillation,neural_ode,5,5,0,5,0,0,0.013500774065362065,0.03229929368095525,-0.018798519615593184,-0.026324223620780785,-0.011272815610405584,0.0625,0.25,complete paired analysis
+vanderpol,obs_050,field_rel_l2,neural_distillation,neural_ode,5,5,0,5,0,0,0.04269697052448727,0.09195809136178865,-0.049261120837301386,-0.06370279139769422,-0.03468053988573762,0.0625,0.25,complete paired analysis
+vanderpol,obs_025,traj_rel_l2,neural_distillation,direct_sindy,5,5,0,4,1,0,0.016538546624672308,0.01957264767685783,-0.0030341010521855254,-0.006257207989298857,0.0002740348562459062,0.1875,0.25,complete paired analysis
+vanderpol,obs_025,field_rel_l2,neural_distillation,direct_sindy,5,5,0,3,2,0,0.04854610162208507,0.055390464266301065,-0.006844362644215988,-0.01851732012248634,0.004828594834054366,0.3125,0.3125,complete paired analysis
+vanderpol,obs_025,structural_f1,neural_distillation,direct_sindy,5,5,0,0,0,5,1.0,1.0,0.0,0.0,0.0,1.0,1.0,complete paired analysis
+vanderpol,obs_025,traj_rel_l2,neural_distillation,neural_ode,5,5,0,5,0,0,0.016538546624672308,0.036066699899830225,-0.019528153275157913,-0.029362085369110107,-0.009694221181205723,0.0625,0.25,complete paired analysis
+vanderpol,obs_025,field_rel_l2,neural_distillation,neural_ode,5,5,0,5,0,0,0.04854610162208507,0.09821223277488807,-0.049666131152802995,-0.06897061030196369,-0.030361652003642298,0.0625,0.25,complete paired analysis
+vanderpol,obs_010,traj_rel_l2,neural_distillation,direct_sindy,5,5,0,5,0,0,0.018820377295857768,0.09342303434205076,-0.07460265704619298,-0.08302080590855472,-0.06576774625403012,0.0625,0.25,complete paired analysis
+vanderpol,obs_010,field_rel_l2,neural_distillation,direct_sindy,5,5,0,5,0,0,0.0547230470544489,0.26914884741070544,-0.21442580035625655,-0.23500002174620688,-0.19348164901691356,0.0625,0.25,complete paired analysis
+vanderpol,obs_010,structural_f1,neural_distillation,direct_sindy,5,5,0,0,2,3,1.0,0.9199999999999999,0.07999999999999999,0.0,0.15999999999999998,0.5,1.0,complete paired analysis
+vanderpol,obs_010,traj_rel_l2,neural_distillation,neural_ode,5,5,0,5,0,0,0.018820377295857768,0.0400869866581701,-0.02126660936231233,-0.03355109103297274,-0.008982127691651926,0.0625,0.25,complete paired analysis
+vanderpol,obs_010,field_rel_l2,neural_distillation,neural_ode,5,5,0,5,0,0,0.0547230470544489,0.11535524650927435,-0.06063219945482545,-0.07980049832514388,-0.04065583127833587,0.0625,0.25,complete paired analysis

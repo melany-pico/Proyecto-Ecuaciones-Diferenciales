@@ -1,0 +1,27 @@
+{
+  "experiment": 33,
+  "systems": [
+    "vanderpol"
+  ],
+  "seeds": [
+    101,
+    202,
+    303,
+    404,
+    505
+  ],
+  "levels": [
+    "obs_100",
+    "obs_050",
+    "obs_025",
+    "obs_010"
+  ],
+  "bootstrap_replicates": 20000,
+  "inferential_unit": "independent seed",
+  "comparison": "paired difference A minus B (negative favors A for errors)",
+  "ci": "percentile bootstrap, resampled paired seeds; exploratory with n=5",
+  "test": "two-sided exact paired sign-flip, exhaustive 2^n sign configurations",
+  "holm_family": "each metric x method contrast across all selected systems and levels",
+  "failure_policy": "infinite aggregate trajectory error on any failed window; finite-pair sensitivity is not full-data inference",
+  "warning": "If running a single-system pilot, Holm correction is pilot-only; use --all for final corrected results."
+}

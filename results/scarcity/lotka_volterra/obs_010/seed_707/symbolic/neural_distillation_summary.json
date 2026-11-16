@@ -1,0 +1,10 @@
+{
+  "method": "neural_distillation",
+  "estimator": "neural_field",
+  "degree": 3,
+  "threshold": 0.3,
+  "terms": 4,
+  "val_traj_l2": 0.026562566204922252,
+  "score": 0.04656256620492225,
+  "candidate_count": 14
+}

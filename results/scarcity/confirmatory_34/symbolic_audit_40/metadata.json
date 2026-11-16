@@ -1,0 +1,23 @@
+{
+  "experiment": 40,
+  "scope": "15 confirmatory seeds",
+  "systems": [
+    "vanderpol",
+    "duffing",
+    "lotka_volterra"
+  ],
+  "levels": [
+    "obs_100",
+    "obs_050",
+    "obs_025",
+    "obs_010"
+  ],
+  "methods": [
+    "neural_distillation",
+    "direct_sindy"
+  ],
+  "models": 360,
+  "paired_comparisons": 180,
+  "coefficient_records": 6502,
+  "note": "Descriptive post-hoc coefficient audit. Missing true polynomial terms are treated as recovered coefficients equal to zero. No retraining or model selection."
+}

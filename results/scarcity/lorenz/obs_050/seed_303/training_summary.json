@@ -1,0 +1,15 @@
+{
+  "experiment": 25,
+  "system": "lorenz",
+  "seed": 303,
+  "level": "obs_050",
+  "best_epoch": 297,
+  "best_val_mse": 0.24926400557160378,
+  "completed_epochs": 300,
+  "train_windows": 73,
+  "val_windows": 73,
+  "initial_weights_sha256": "bfa64752b79d724298a0bd79d4c7530136ef576e108e894b92d66fc9c63e4db6",
+  "minibatch_schedule_sha256": "f7b6877f62fd08d98761a6c7235ae506cec36c2b3a92ef29c0656b6652204a39",
+  "window_duration": 0.8,
+  "test_accessed": false
+}

@@ -1,0 +1,15 @@
+method,estimator,degree,threshold,terms,val_traj_l2,score
+neural_distillation,neural_field,2,0.01,28,0.5043098515925868,0.6443098515925868
+neural_distillation,neural_field,2,0.03,25,0.5034962342670524,0.6284962342670524
+neural_distillation,neural_field,2,0.05,22,0.5019389112868234,0.6119389112868234
+neural_distillation,neural_field,2,0.1,17,0.5055332484714831,0.590533248471483
+neural_distillation,neural_field,2,0.2,13,0.5145066209046495,0.5795066209046495
+neural_distillation,neural_field,2,0.3,8,0.5040683711191037,0.5440683711191038
+neural_distillation,neural_field,2,0.5,8,0.7354158250464096,0.7754158250464096
+neural_distillation,neural_field,3,0.01,55,1.934883981752731,2.209883981752731
+neural_distillation,neural_field,3,0.03,43,0.4823107508377404,0.6973107508377404
+neural_distillation,neural_field,3,0.05,22,0.4653604019389573,0.5753604019389573
+neural_distillation,neural_field,3,0.1,22,0.4653604019389573,0.5753604019389573
+neural_distillation,neural_field,3,0.2,16,inf,inf
+neural_distillation,neural_field,3,0.3,6,0.7491020824748912,0.7791020824748912
+neural_distillation,neural_field,3,0.5,5,0.7435455167368893,0.7685455167368893

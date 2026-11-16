@@ -1,0 +1,112 @@
+{
+  "experiment": 44,
+  "created_utc": "2026-11-01T19:48:31.359762+00:00",
+  "status": "preregistered_before_new_data_generation_and_training",
+  "purpose": "Multisystem observational-noise robustness extension of experiments 29-42",
+  "independence_note": "Reuses trajectories and seeds examined in experiment 34; not an independent replication. Lorenz exploratory noise results informed this design.",
+  "source_protocol": "results/scarcity/confirmatory_34/protocol.json",
+  "source_protocol_sha256": "af0fc51dd75f705baf7b89e97104efc6477db94a941151832b10c932cb2cf7bd",
+  "frozen_source_sha256": {
+    "scripts/29_prepare_multisystem_scarcity.py": "a1fac298fdba0ca8f3eb1464d13b0ef96ff6bc3b2e13bb2eda96313aee8a9f3f",
+    "scripts/30_train_multisystem_scarcity.py": "ed30f97ce43916170e294e21af08c8d6674b90f20d75e58de98fdcc34269c29b",
+    "scripts/31_discover_multisystem_scarcity.py": "666bf6c76f603cc29536ca04c9c0c27d60c443f8a1c5f8e3d13267ec7a929c41",
+    "scripts/32_evaluate_multisystem_scarcity.py": "85352d8994a854b5a6c8b21f35a61e5a67faa4e6052514893d6f4bd2edcf1264",
+    "scripts/33_statistical_analysis_multisystem.py": "28c09f6b1cdd5fc26d86d28cf6313c138a65ac9913fbed219cff5fa3cf706dc5",
+    "configs/default.yml": "19569a25e1f7b570e747e61b4383dc867d61e295526c4a601a9827a0a3461234"
+  },
+  "systems": [
+    "vanderpol",
+    "duffing",
+    "lotka_volterra"
+  ],
+  "seeds": [
+    606,
+    707,
+    808,
+    909,
+    1010,
+    1111,
+    1212,
+    1313,
+    1414,
+    1515,
+    1616,
+    1717,
+    1818,
+    1919,
+    2020
+  ],
+  "exploratory_seeds_excluded": [
+    101,
+    202,
+    303,
+    404,
+    505
+  ],
+  "observation_level": "obs_100",
+  "time_points": 160,
+  "noise_standard_deviations_absolute": [
+    0.0,
+    0.01,
+    0.05,
+    0.1,
+    0.2
+  ],
+  "noise_labels": [
+    "noise_000",
+    "noise_001",
+    "noise_005",
+    "noise_010",
+    "noise_020"
+  ],
+  "noise_model": "Additive independent zero-mean Gaussian noise per coordinate, trajectory, and observed time point; generate exclusively from x_clean, not x.",
+  "noise_rng_policy": "Separate deterministic RNG streams per system, seed, noise level and split; log generator identifiers and hashes in data manifests. Same noisy datasets for all methods. Noise=0 is exactly clean.",
+  "source_data_root": "data/scarcity",
+  "data_root": "data/robustness_multisystem_44",
+  "results_root": "results/robustness_multisystem_44",
+  "methods": [
+    "neural_ode",
+    "neural_distillation",
+    "direct_sindy"
+  ],
+  "train_val_test_policy": "Training and model selection use train and val only; test is opened only after all hyperparameters and models for a condition are fixed. Never use test to tune.",
+  "training_policy": "Preserve experiment 30 architecture, trajectory-only loss, normalization from noisy train only, 0.8-duration windows, optimization, validation selection and stopping. Pair initial weights and minibatch schedule within system/seed across noise levels.",
+  "discovery_policy": "Preserve experiment 31 polynomial degrees, thresholds, ridge, derivative estimators, 0.8 validation horizon and complexity penalty. Select from noisy validation only.",
+  "primary_endpoint": "Mean short-horizon test trajectory relative L2 over 5 clean test trajectories x 8 windows, per seed and model; use clean initial states.",
+  "primary_contrast": "neural_distillation minus direct_sindy; negative favors distillation",
+  "primary_hypotheses": [
+    {
+      "system": "vanderpol",
+      "noise_std": 0.2,
+      "alternative": "two-sided difference between neural_distillation and direct_sindy"
+    },
+    {
+      "system": "duffing",
+      "noise_std": 0.2,
+      "alternative": "two-sided difference between neural_distillation and direct_sindy"
+    },
+    {
+      "system": "lotka_volterra",
+      "noise_std": 0.2,
+      "alternative": "two-sided difference between neural_distillation and direct_sindy"
+    }
+  ],
+  "primary_inference": "Paired seed-level comparisons at noise_std=0.20 for each of three systems; two-sided exact paired sign-flip permutation test where feasible, Holm adjustment across three hypotheses; report paired effect sizes and uncertainty intervals. No claim of superiority from significance alone.",
+  "secondary_analyses": [
+    "Clean-start trajectory error at other noise levels and noise-response curves",
+    "Noisy-start trajectory error with independent prespecified test-start perturbations shared by all methods, evaluated against clean reference",
+    "Vector-field relative L2 on identical clean test states",
+    "Symbolic structural F1 using each system true support",
+    "Integration failure rates and successful-window means (sensitivity only)"
+  ],
+  "noisy_start_policy": "For each training-noise condition, perturb each clean test window initial state with independent zero-mean Gaussian noise of the same absolute std; fixed deterministic noise per system/seed/noise/window, shared across methods. Reference trajectory remains clean. Do not use these perturbations in selection.",
+  "test_evaluation_policy": "Preserve experiment 32 eight 0.8-horizon windows per five clean test trajectories, RK45 rtol=1e-5 atol=1e-7 max_step=0.08; fixed clean reference and same states for field metric.",
+  "failure_policy": "Record every failure. If any of 40 windows fails, model aggregate trajectory error is +Infinity; failed method ranks worse than finite method, both failed tied. Report failure-aware comparisons and finite-only sensitivity with denominators. Never silently drop/cap failures.",
+  "inference_unit": "seed; windows and trajectories are repeated measurements, not independent replicates",
+  "planned_data_conditions": 225,
+  "planned_neural_models": 225,
+  "planned_symbolic_models": 450,
+  "planned_model_evaluations_per_start_policy": 675,
+  "planned_test_windows_per_start_policy": 27000,
+  "integrity_policy": "Never modify data/scarcity, results/scarcity or original scripts. Never overwrite a completed new artifact. Record source and output checksums. Pilot with one system/seed before full run."
+}

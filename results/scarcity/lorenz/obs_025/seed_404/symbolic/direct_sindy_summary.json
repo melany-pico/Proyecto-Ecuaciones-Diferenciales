@@ -1,0 +1,10 @@
+{
+  "method": "direct_sindy",
+  "estimator": "localpoly_w5",
+  "degree": 2,
+  "threshold": 0.5,
+  "terms": 5,
+  "val_traj_l2": 0.5452041775526776,
+  "score": 0.5702041775526776,
+  "candidate_count": 98
+}

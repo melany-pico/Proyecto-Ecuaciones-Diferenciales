@@ -1,0 +1,93 @@
+{
+  "experiment": 34,
+  "created_utc": "2026-10-25T22:52:08.531755+00:00",
+  "purpose": "Prospective replication of multisystem temporal-scarcity comparisons",
+  "exploratory_seeds_excluded_from_confirmatory_primary_test": [
+    101,
+    202,
+    303,
+    404,
+    505
+  ],
+  "confirmatory_seeds": [
+    606,
+    707,
+    808,
+    909,
+    1010,
+    1111,
+    1212,
+    1313,
+    1414,
+    1515,
+    1616,
+    1717,
+    1818,
+    1919,
+    2020
+  ],
+  "systems": [
+    "vanderpol",
+    "duffing",
+    "lotka_volterra"
+  ],
+  "observation_levels": [
+    "obs_100",
+    "obs_050",
+    "obs_025",
+    "obs_010"
+  ],
+  "methods": [
+    "neural_ode",
+    "neural_distillation",
+    "direct_sindy"
+  ],
+  "primary_endpoint": "mean test short-horizon trajectory relative L2 per independent seed",
+  "primary_contrast": "neural_distillation minus direct_sindy; negative favors distillation",
+  "primary_hypotheses": [
+    {
+      "system": "vanderpol",
+      "level": "obs_010",
+      "direction": "neural_distillation < direct_sindy"
+    },
+    {
+      "system": "duffing",
+      "level": "obs_010",
+      "direction": "neural_distillation < direct_sindy"
+    },
+    {
+      "system": "lotka_volterra",
+      "level": "obs_010",
+      "direction": "neural_distillation < direct_sindy"
+    }
+  ],
+  "multiplicity": "Holm adjustment over three primary system-specific hypotheses",
+  "secondary_endpoints": [
+    "field relative L2",
+    "symbolic structural F1",
+    "integration failure rate",
+    "obs_025 trajectory relative L2"
+  ],
+  "inference_unit": "seed, not trajectory or window",
+  "missing_and_infinite_policy": "Report all integration failures; never silently drop or cap infinities. Report complete-case finite error comparisons as sensitivity analyses only. For primary confirmatory inference, use a prespecified failure-aware paired comparison where a failed method ranks worse than a finite method; if both fail, treat as tied. Also report finite-only estimates and their denominators.",
+  "design_constraints": [
+    "No modification to original 5-seed results",
+    "No model selection on test",
+    "Use the frozen training/discovery/evaluation protocol for new seeds",
+    "Run a new-seed pilot before full replication",
+    "Do not treat exploratory and confirmatory seeds as one independent confirmatory dataset"
+  ],
+  "planned_new_conditions": 180,
+  "planned_new_neural_ode_models": 180,
+  "planned_new_symbolic_models": 360,
+  "planned_new_test_model_evaluations": 540,
+  "source_sha256": {
+    "scripts/29_prepare_multisystem_scarcity.py": "a1fac298fdba0ca8f3eb1464d13b0ef96ff6bc3b2e13bb2eda96313aee8a9f3f",
+    "scripts/30_train_multisystem_scarcity.py": "ed30f97ce43916170e294e21af08c8d6674b90f20d75e58de98fdcc34269c29b",
+    "scripts/31_discover_multisystem_scarcity.py": "666bf6c76f603cc29536ca04c9c0c27d60c443f8a1c5f8e3d13267ec7a929c41",
+    "scripts/32_evaluate_multisystem_scarcity.py": "85352d8994a854b5a6c8b21f35a61e5a67faa4e6052514893d6f4bd2edcf1264",
+    "scripts/33_statistical_analysis_multisystem.py": "28c09f6b1cdd5fc26d86d28cf6313c138a65ac9913fbed219cff5fa3cf706dc5",
+    "configs/default.yml": "19569a25e1f7b570e747e61b4383dc867d61e295526c4a601a9827a0a3461234"
+  },
+  "manifest_sha256": "e631f4646aad5ed3fa26f49e7598a2aac38312199a475e0fa75005970cebda2c"
+}

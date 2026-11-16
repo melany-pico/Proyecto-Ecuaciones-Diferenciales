@@ -1,0 +1,17 @@
+{
+  "system": "lorenz",
+  "checkpoint": "C:\\Users\\hp\\Desktop\\neural_ode_symbolic_distillation\\results\\checkpoints\\lorenz_v05.pt",
+  "selection": "validation_neural_field",
+  "complexity_penalty": 0.005,
+  "degree": 2,
+  "threshold": 0.3,
+  "n_terms": 6,
+  "train_relative_l2": 0.119647753848664,
+  "val_relative_l2": 0.08781354235080521,
+  "selection_score": 0.11781354235080521,
+  "equations": [
+    "dx0/dt = (-9.194147)*x0 (+9.287602)*x1",
+    "dx1/dt = (+22.732223)*x0 (-0.840476)*x0 x2",
+    "dx2/dt = (-2.453224)*x2 (+0.901395)*x0 x1"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "dim": 2,
+  "hidden": 64,
+  "system": "lotka_volterra",
+  "seed": 1010,
+  "level": "obs_100",
+  "version": "scarcity_multisystem_paired_v1",
+  "normalized": true,
+  "best_val": 0.0037423951871460304,
+  "best_epoch": 249,
+  "initialization_seed": 901010,
+  "initial_weights_sha256": "2909a077fc5f9fc7271e2831338e4edd61762e0933f2267edd0e8c73699f1e3f",
+  "minibatch_schedule_sha256": "53ed0a9a844ba9d5ae8ffcc883fd4953be1f700aabeedc3cbbe408bfefdecbba",
+  "window_duration": 0.8,
+  "training_config": {
+    "epochs": 300,
+    "lr": 0.001,
+    "hidden": 64,
+    "batch_trajectories": 8,
+    "segment_length": 8,
+    "batches_per_epoch": 8,
+    "device": "cpu",
+    "normalization": {
+      "enabled": true,
+      "epsilon": 1e-06
+    },
+    "loss": {
+      "trajectory_weight": 1.0,
+      "derivative_weight": 0.1
+    },
+    "scheduler": {
+      "factor": 0.5,
+      "patience": 20
+    },
+    "early_stopping": {
+      "patience": 60
+    }
+  },
+  "epochs_completed": 300,
+  "training_windows": 144,
+  "validation_windows": 8,
+  "train_trajectories": 16,
+  "val_trajectories": 3
+}

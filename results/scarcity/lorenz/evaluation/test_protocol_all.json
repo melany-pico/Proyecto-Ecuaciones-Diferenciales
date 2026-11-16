@@ -1,0 +1,30 @@
+{
+  "experiment": 27,
+  "system": "lorenz",
+  "seeds": [
+    101,
+    202,
+    303,
+    404,
+    505
+  ],
+  "levels": [
+    "obs_100",
+    "obs_050",
+    "obs_025",
+    "obs_010"
+  ],
+  "methods": [
+    "neural_ode",
+    "neural_distillation",
+    "direct_sindy"
+  ],
+  "reference": "obs_100/test.npz:x_clean",
+  "horizon": 0.8,
+  "windows_per_trajectory": 8,
+  "evaluation_points_per_window": 9,
+  "field_reference": "analytical Lorenz vector field",
+  "trajectory_reference": "linear interpolation of clean dense test",
+  "selection": "fixed in experiment 26; no tuning on test",
+  "failure_policy": "failures reported separately; failed windows excluded from mean; compare failure_rate"
+}

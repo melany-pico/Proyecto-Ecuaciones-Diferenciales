@@ -1,0 +1,14 @@
+{
+  "design": "15 independent new seeds; 3 systems; 4 scarcity levels; ND minus direct SINDy",
+  "analysis": "exact two-sided sign-flip of paired mean on all-finite groups; 20,000 paired bootstrap resamples; Holm over 12 hypotheses; failure-robust win/loss sign test on all 15 seeds",
+  "caution": "If nonfinite pairs occur, mean-difference tests on finite subset are descriptive and not confirmatory. Sign test uses all seeds but tests wins rather than mean error.",
+  "seed_count": 15,
+  "comparisons": 12,
+  "nonfinite_comparisons": 0,
+  "total_failed_windows_nd": 0,
+  "total_failed_windows_sindy": 0,
+  "files": [
+    "confirmatory_15_paired.csv",
+    "confirmatory_15_per_seed.csv"
+  ]
+}

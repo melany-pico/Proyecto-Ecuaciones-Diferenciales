@@ -1,0 +1,14 @@
+{
+  "method": "direct_sindy",
+  "estimator": "savgol_w5",
+  "degree": 2,
+  "threshold": 0.2,
+  "terms": 6,
+  "val_traj_l2": 0.03970640050937378,
+  "score": 0.06970640050937378,
+  "equations": [
+    "dx0/dt = (-9.919483)*x0 (+9.920287)*x1",
+    "dx1/dt = (+25.088268)*x0 (-0.935465)*x0 x2",
+    "dx2/dt = (-2.636499)*x2 (+0.988629)*x0 x1"
+  ]
+}

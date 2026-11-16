@@ -1,0 +1,56 @@
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+.ipynb_checkpoints/
+
+# Entornos virtuales
+.venv/
+venv/
+env/
+
+# Archivos temporales
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Credenciales
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets.json
+
+# Datos generados y externos
+data/processed/*
+data/external/*
+!**/.gitkeep
+
+# Checkpoints y modelos entrenados
+results/checkpoints/
+*.pt
+*.pth
+*.ckpt
+
+# Respaldos comprimidos
+*.zip
+
+# Archivos temporales de editores
+.vscode/
+.idea/
+
+archivos_para_github.txt
+revision_git.txt
+
+# Datos experimentales generados
+data/benchmark/
+data/scarcity/
+data/robustness/
+
+# Resultados individuales por semilla
+results/scarcity/*/seed_*/
+results/robustness_multisystem_44/*/noise_*/seed_*/

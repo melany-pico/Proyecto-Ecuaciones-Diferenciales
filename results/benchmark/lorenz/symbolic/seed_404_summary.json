@@ -1,0 +1,16 @@
+{
+  "seed": 404,
+  "degree": 3,
+  "threshold": 0.3,
+  "n_terms": 8,
+  "trajectory_relative_l2": 0.07846766386123577,
+  "failed_segments": 0,
+  "score": 0.11846766386123578,
+  "equations": [
+    "dx0/dt = (+6.225401)*x1 (-0.256726)*x0 x2 (+0.021069)*x0 x1^2 (-0.010936)*x1^3",
+    "dx1/dt = (+22.311482)*x0 (-0.845280)*x0 x2",
+    "dx2/dt = (-2.471198)*x2 (+0.907419)*x0 x1"
+  ],
+  "selection": "Validation trajectory relative L2 + 0.005 per nonzero term",
+  "test_used": false
+}

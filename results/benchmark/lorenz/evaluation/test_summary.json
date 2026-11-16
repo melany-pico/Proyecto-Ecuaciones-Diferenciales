@@ -1,0 +1,23 @@
+{
+  "direct_sindy": {
+    "trajectory_mean": 0.043673576451448794,
+    "trajectory_std": 0.00677732199542401,
+    "field_mean": 0.030398466124502845,
+    "field_std": 0.0009002570573663571,
+    "total_failed_segments": 0
+  },
+  "neural_distillation": {
+    "trajectory_mean": 0.12142697382348902,
+    "trajectory_std": 0.018678025683170455,
+    "field_mean": 0.14457030133695303,
+    "field_std": 0.018351052946696533,
+    "total_failed_segments": 0
+  },
+  "neural_ode": {
+    "trajectory_mean": 0.11111342859398432,
+    "trajectory_std": 0.052899941410358434,
+    "field_mean": 0.22880892616919385,
+    "field_std": 0.016897571009769335,
+    "total_failed_segments": 0
+  }
+}

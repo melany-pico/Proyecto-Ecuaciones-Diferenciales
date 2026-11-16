@@ -1,0 +1,44 @@
+{
+  "dim": 2,
+  "hidden": 64,
+  "system": "vanderpol",
+  "seed": 808,
+  "level": "obs_100",
+  "version": "scarcity_multisystem_paired_v1",
+  "normalized": true,
+  "best_val": 0.0011729014622687828,
+  "best_epoch": 293,
+  "initialization_seed": 700808,
+  "initial_weights_sha256": "a38cdf05fb7bc73bb1c4c461f7082e537ce87baf45617bc9f947c3a9d8c3713c",
+  "minibatch_schedule_sha256": "8567604a8905fbfc11cecfac4886678373a433c8b49eb2ae8950e0c2e49a669e",
+  "window_duration": 0.8,
+  "training_config": {
+    "epochs": 300,
+    "lr": 0.001,
+    "hidden": 64,
+    "batch_trajectories": 8,
+    "segment_length": 8,
+    "batches_per_epoch": 8,
+    "device": "cpu",
+    "normalization": {
+      "enabled": true,
+      "epsilon": 1e-06
+    },
+    "loss": {
+      "trajectory_weight": 1.0,
+      "derivative_weight": 0.1
+    },
+    "scheduler": {
+      "factor": 0.5,
+      "patience": 20
+    },
+    "early_stopping": {
+      "patience": 60
+    }
+  },
+  "epochs_completed": 300,
+  "training_windows": 144,
+  "validation_windows": 8,
+  "train_trajectories": 16,
+  "val_trajectories": 3
+}

@@ -1,0 +1,69 @@
+{
+  "seeds": [
+    101,
+    202,
+    303,
+    404,
+    505
+  ],
+  "systems": [
+    "lorenz"
+  ],
+  "splits": {
+    "train": 16,
+    "val": 3,
+    "test": 5
+  },
+  "runs": [
+    {
+      "system": "lorenz",
+      "seed": 101,
+      "directory": "data\\benchmark\\lorenz\\seed_101",
+      "observed_shape": [
+        24,
+        160,
+        3
+      ]
+    },
+    {
+      "system": "lorenz",
+      "seed": 202,
+      "directory": "data\\benchmark\\lorenz\\seed_202",
+      "observed_shape": [
+        24,
+        160,
+        3
+      ]
+    },
+    {
+      "system": "lorenz",
+      "seed": 303,
+      "directory": "data\\benchmark\\lorenz\\seed_303",
+      "observed_shape": [
+        24,
+        160,
+        3
+      ]
+    },
+    {
+      "system": "lorenz",
+      "seed": 404,
+      "directory": "data\\benchmark\\lorenz\\seed_404",
+      "observed_shape": [
+        24,
+        160,
+        3
+      ]
+    },
+    {
+      "system": "lorenz",
+      "seed": 505,
+      "directory": "data\\benchmark\\lorenz\\seed_505",
+      "observed_shape": [
+        24,
+        160,
+        3
+      ]
+    }
+  ]
+}

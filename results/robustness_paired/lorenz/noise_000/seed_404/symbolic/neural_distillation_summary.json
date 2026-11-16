@@ -1,0 +1,14 @@
+{
+  "method": "neural_distillation",
+  "estimator": "neural_field",
+  "degree": 3,
+  "threshold": 0.3,
+  "terms": 8,
+  "val_traj_l2": 0.08555606704389658,
+  "score": 0.12555606704389657,
+  "equations": [
+    "dx0/dt = (+6.750294)*x1 (-0.233355)*x0 x2",
+    "dx1/dt = (+22.064417)*x0 (-0.835042)*x0 x2",
+    "dx2/dt = (-3.064442)*x2 (+0.910145)*x0 x1 (+0.080451)*x2^2 (-0.001895)*x2^3"
+  ]
+}

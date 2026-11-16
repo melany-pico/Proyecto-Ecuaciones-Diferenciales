@@ -1,0 +1,51 @@
+{
+  "analysis": "Supplementary primary-hypothesis audit, experiment 34",
+  "status": "Retrospective implementation of frozen directional primary hypotheses",
+  "protocol_sha256": "af0fc51dd75f705baf7b89e97104efc6477db94a941151832b10c932cb2cf7bd",
+  "input_sha256": "39d1c738930d03651a7998c32b7691b33a1c830d1fef23ac6fd39fad2f0ddfde",
+  "hypotheses": "Three one-sided paired mean sign-flip tests at obs_010; negative favors ND",
+  "multiplicity": "Holm across exactly three primary hypotheses",
+  "bootstrap": "20000 paired-seed resamples; percentile 95% descriptive CIs",
+  "note": "Original Experiment 38 two-sided 12-comparison analysis remains unchanged.",
+  "results": [
+    {
+      "system": "vanderpol",
+      "level": "obs_010",
+      "n_seeds": 15,
+      "mean_delta_nd_minus_sindy": -0.07148037988555263,
+      "ci95_bootstrap_low": -0.07738103991217848,
+      "ci95_bootstrap_high": -0.06474394342570647,
+      "nd_wins": 15,
+      "sindy_wins": 0,
+      "ties": 0,
+      "p_exact_one_sided": 3.0517578125e-05,
+      "p_holm_three_primary": 9.1552734375e-05
+    },
+    {
+      "system": "duffing",
+      "level": "obs_010",
+      "n_seeds": 15,
+      "mean_delta_nd_minus_sindy": 0.08345424051014222,
+      "ci95_bootstrap_low": 0.026175873914961734,
+      "ci95_bootstrap_high": 0.13922936126625202,
+      "nd_wins": 6,
+      "sindy_wins": 9,
+      "ties": 0,
+      "p_exact_one_sided": 0.992889404296875,
+      "p_holm_three_primary": 0.992889404296875
+    },
+    {
+      "system": "lotka_volterra",
+      "level": "obs_010",
+      "n_seeds": 15,
+      "mean_delta_nd_minus_sindy": -0.1116387727006166,
+      "ci95_bootstrap_low": -0.12808084506063327,
+      "ci95_bootstrap_high": -0.09543923069387715,
+      "nd_wins": 15,
+      "sindy_wins": 0,
+      "ties": 0,
+      "p_exact_one_sided": 3.0517578125e-05,
+      "p_holm_three_primary": 9.1552734375e-05
+    }
+  ]
+}

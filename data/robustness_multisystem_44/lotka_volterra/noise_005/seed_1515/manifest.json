@@ -1,0 +1,54 @@
+{
+  "experiment": 44,
+  "system": "lotka_volterra",
+  "seed": 1515,
+  "noise_label": "noise_005",
+  "noise_std": 0.05,
+  "protocol_sha256": "7c059ce3948b73039a68306e7d55fbe03428dad8535d91dfe2b9791c9aa8c3a6",
+  "source_sha256": {
+    "train": "80ab79ed3b4acd13c5984d39bf9612ed6cfe956213eaafef42b999855f1fd81e",
+    "val": "18d01a9e24c98737e7de76a636d57475314e4883b486ba1637105f31a3fe3bf0",
+    "test": "d392c87276189d9b264da835b029f1011c66013dbf8c40ea92023d210aede666"
+  },
+  "output_sha256": {
+    "train": "47d7a4a631198b391a79f9d86b5b44d97b6c79e95ea2c409ad662e73f0ed4cb7",
+    "val": "877e6727c9bf1e156998b830dcd40e88014e7230c42bb60f07fef7714b2929cc",
+    "test": "2dbcbd463e8371b3ff2c1fb141f2236a28e1786931da961cda840ff8f7be354f"
+  },
+  "rng": "numpy.default_rng(SeedSequence(SHA256-derived uint32 words))",
+  "rng_token_format": "exp44|gaussian|system|seed|noise_label|split",
+  "noise_generated_from": "x_clean",
+  "test_policy": "Generated and sealed; never use test for training or model selection",
+  "trajectory_ids": {
+    "train": [
+      0,
+      2,
+      3,
+      4,
+      8,
+      9,
+      10,
+      12,
+      13,
+      14,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "val": [
+      6,
+      16,
+      17
+    ],
+    "test": [
+      1,
+      5,
+      7,
+      11,
+      15
+    ]
+  }
+}

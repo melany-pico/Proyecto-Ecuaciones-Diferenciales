@@ -1,0 +1,54 @@
+{
+  "experiment": 44,
+  "system": "duffing",
+  "seed": 1717,
+  "noise_label": "noise_000",
+  "noise_std": 0.0,
+  "protocol_sha256": "7c059ce3948b73039a68306e7d55fbe03428dad8535d91dfe2b9791c9aa8c3a6",
+  "source_sha256": {
+    "train": "dfe096194743a49e43706ab51ad56dcfdf77ec64d34bd9e8b6991ec30d3a8524",
+    "val": "b512d1c043c818d525d7f09df81dc4884b7a684c0aebc5dd9f793e38c5866acf",
+    "test": "1a756ba7faac09ea954f3368e90c7eb078b7dc54731f8cbb01056306644be5e2"
+  },
+  "output_sha256": {
+    "train": "941e67fb2f0c1a032397f578eee760b94d133ce2f88dbc4c3a0bd6a8990e0a1d",
+    "val": "04d76e2e8e9af7ad04234b54264a476c08b2d4186b92b8a6adbbd3dcce031167",
+    "test": "bf700d6e10f085eafa089e1e354c4318ca134164a791095134740157a85db6a5"
+  },
+  "rng": "numpy.default_rng(SeedSequence(SHA256-derived uint32 words))",
+  "rng_token_format": "exp44|gaussian|system|seed|noise_label|split",
+  "noise_generated_from": "x_clean",
+  "test_policy": "Generated and sealed; never use test for training or model selection",
+  "trajectory_ids": {
+    "train": [
+      1,
+      4,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      20,
+      21,
+      23
+    ],
+    "val": [
+      2,
+      3,
+      6
+    ],
+    "test": [
+      0,
+      5,
+      18,
+      19,
+      22
+    ]
+  }
+}

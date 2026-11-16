@@ -1,0 +1,36 @@
+{
+  "experiment": 41,
+  "system": "duffing",
+  "levels": [
+    "obs_100",
+    "obs_050",
+    "obs_025",
+    "obs_010"
+  ],
+  "seeds": [
+    606,
+    707,
+    808,
+    909,
+    1010,
+    1111,
+    1212,
+    1313,
+    1414,
+    1515,
+    1616,
+    1717,
+    1818,
+    1919,
+    2020
+  ],
+  "splits": [
+    "train",
+    "val"
+  ],
+  "checkpoints": 60,
+  "rows": 120,
+  "states": "Original x_clean train/val states",
+  "neural_evaluation": "physical_field",
+  "note": "Post-hoc diagnostic using frozen models. No test data, retraining, tuning, or new model selection."
+}

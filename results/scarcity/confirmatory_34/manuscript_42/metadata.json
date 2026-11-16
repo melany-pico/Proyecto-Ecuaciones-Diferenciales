@@ -1,0 +1,41 @@
+{
+  "experiment": 42,
+  "systems": [
+    "vanderpol",
+    "duffing",
+    "lotka_volterra"
+  ],
+  "levels": [
+    "obs_100",
+    "obs_050",
+    "obs_025",
+    "obs_010"
+  ],
+  "seeds": [
+    606,
+    707,
+    808,
+    909,
+    1010,
+    1111,
+    1212,
+    1313,
+    1414,
+    1515,
+    1616,
+    1717,
+    1818,
+    1919,
+    2020
+  ],
+  "prediction_models": 540,
+  "symbolic_models": 360,
+  "duffing_diagnostic_rows": 120,
+  "figures": 3,
+  "tables": 3,
+  "error_bars": "Standard error across 15 seeds; descriptive only.",
+  "analysis_type": "Post-hoc manuscript visualization",
+  "no_retraining": true,
+  "no_new_test_evaluation": true,
+  "notes": "Confirmatory inference from experiment 38 remains separate from the descriptive figures generated here."
+}

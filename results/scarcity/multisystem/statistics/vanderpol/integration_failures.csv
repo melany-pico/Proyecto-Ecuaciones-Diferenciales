@@ -1,0 +1,13 @@
+system,level,method,models,windows,failures,failure_rate,models_with_failure
+vanderpol,obs_100,neural_ode,5,200,0,0.0,0
+vanderpol,obs_100,neural_distillation,5,200,0,0.0,0
+vanderpol,obs_100,direct_sindy,5,200,0,0.0,0
+vanderpol,obs_050,neural_ode,5,200,0,0.0,0
+vanderpol,obs_050,neural_distillation,5,200,0,0.0,0
+vanderpol,obs_050,direct_sindy,5,200,0,0.0,0
+vanderpol,obs_025,neural_ode,5,200,0,0.0,0
+vanderpol,obs_025,neural_distillation,5,200,0,0.0,0
+vanderpol,obs_025,direct_sindy,5,200,0,0.0,0
+vanderpol,obs_010,neural_ode,5,200,0,0.0,0
+vanderpol,obs_010,neural_distillation,5,200,0,0.0,0
+vanderpol,obs_010,direct_sindy,5,200,0,0.0,0
